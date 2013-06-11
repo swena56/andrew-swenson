@@ -1,5 +1,7 @@
 AndrewSwenson::Application.routes.draw do
+  root :to => 'home#index'
   get "home/index"
+  get "home/aboutMe"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
