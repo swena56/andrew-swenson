@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+
+body
+{
+margin-right:200px;
+
+background-color:#b0c4de;
+}
+
+h1
+{
+    background-position:right top;
+    color:rgb(255,255,255);
+    font-size:50px;
+}
+</style>
+
+
+<h1>Home</h1>
+<p> My first website deployed on Heroku at 6/10/2013 at 10:30  </p>
+
+<p><%= Time.now%> </p>
+
+<%= stylesheet_link_tag 'blueprint/screen',:media=> 'screen'  %>
+<%= stylesheet_link_tag 'blueprint/print', :media=> 'print' %>
+
+
+
+
+
+
+<%= link_to "About Andrew Swenson", "home/aboutMe" %><br />
+
+<br><br>
+<%= image_tag("heroku.jpeg", :alt => "heroku image") %>
+<%= image_tag("rails.png", :alt => "rails image") %>
+
+</html>
+
